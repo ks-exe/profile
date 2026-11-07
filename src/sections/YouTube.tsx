@@ -1,6 +1,6 @@
 import { Play, ArrowUpRight, Youtube } from 'lucide-react';
 
-const CHANNEL = 'https://www.youtube.com/channel/UC5FapuVL0HpBifsXnmsI3CQ';
+const CHANNEL = 'https://www.youtube.com/@KhadijaSajid-Tech';
 
 type Video = {
   title: string;
@@ -27,8 +27,8 @@ const videos: Video[] = [
     thumbnail: 'https://img.youtube.com/vi/LGUcXuvvigM/hqdefault.jpg',
   },
   {
-    title: 'Data Quality Inspector — Demo',
-    description: 'Walkthrough of the AWS-powered data quality analysis application using Amazon Bedrock, API Gateway, and AWS Lambda.',
+    title: 'Data Quality Inspector | AI-Powered CSV Analysis on AWS (Live Demo)',
+    description: 'Live demo of the AWS-powered data quality analysis application using Amazon Bedrock, API Gateway, and AWS Lambda.',
     url: 'https://youtu.be/zZUFQLpvs8A',
     project: 'Data Quality Inspector',
     thumbnail: 'https://img.youtube.com/vi/zZUFQLpvs8A/hqdefault.jpg',
@@ -121,7 +121,7 @@ export function YouTube() {
         <div className="reveal mt-8 flex flex-col items-start gap-4 border border-stone/40 bg-paper p-6 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <p className="font-display text-base font-normal text-ink">More engineering content on YouTube</p>
-            <p className="font-mono text-[10px] text-clay/50 tracking-[0.1em] mt-1">youtube.com/channel/UC5FapuVL0HpBifsXnmsI3CQ</p>
+            <p className="font-mono text-[10px] text-clay/50 tracking-[0.1em] mt-1">youtube.com/@KhadijaSajid-Tech</p>
           </div>
           <a href={CHANNEL} target="_blank" rel="noopener noreferrer"
             className="btn-primary group inline-flex items-center gap-2 border border-oxblood bg-oxblood px-5 py-2.5 font-mono text-[10px] tracking-[0.15em] uppercase text-paper transition-colors hover:bg-oxblood-deep flex-shrink-0">

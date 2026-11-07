@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { Mail, Linkedin, Github, Globe, Copy, Check, ArrowUpRight } from 'lucide-react';
+import { Mail, Linkedin, Github, Globe, Youtube, Copy, Check, ArrowUpRight } from 'lucide-react';
 import { links, contactChannels } from '../data/links';
 import { profile } from '../data/profile';
 
 const ICONS: Record<string, typeof Mail> = {
-  Email: Mail, LinkedIn: Linkedin, GitHub: Github, 'AWS Builder Center': Globe,
+  Email: Mail, LinkedIn: Linkedin, GitHub: Github, YouTube: Youtube, 'AWS Builder Center': Globe,
 };
 
 export function Contact() {
