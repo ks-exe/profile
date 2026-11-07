@@ -77,6 +77,7 @@ export const projects: Project[] = [
     ],
     stack: ['Python', 'FastAPI', 'DuckDB', 'Parquet', 'Solidity', 'web3.py', 'React', 'TypeScript', 'Leaflet'],
     github: 'https://github.com/ks-exe/EcoProof_Climate-Data-Environmental-Monitoring',
+    videoUrl: 'https://youtu.be/mIxmj9SkpQ0',
   },
 
   // ── STANDARD (04–07) ────────────────────────────────────────────────────
@@ -112,7 +113,7 @@ export const projects: Project[] = [
     ],
     stack: ['Python', 'Amazon Bedrock', 'AgentCore', 'Bedrock Flows', 'AWS Lambda', 'DynamoDB', 'Bedrock Evaluations'],
     github: 'https://github.com/ks-exe/Amazon-Bedrock-Agentcore-Harness',
-    videoUrl: 'https://youtu.be/zZUFQLpvs8A',
+    // No video link — the previously assigned video belongs to Data Quality Inspector
   },
   {
     number: '06',
@@ -129,6 +130,7 @@ export const projects: Project[] = [
     stack: ['Python', 'Amazon Bedrock', 'API Gateway', 'AWS Lambda'],
     github: 'https://github.com/ks-exe/Data-Quality-Inspector',
     demoUrl: 'https://u97j0opdi9.execute-api.us-east-2.amazonaws.com',
+    videoUrl: 'https://youtu.be/zZUFQLpvs8A',
   },
   {
     number: '07',

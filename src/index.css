@@ -441,16 +441,18 @@ body {
    SKILLS TAG HOVER
 ═══════════════════════════════════════════════════════════════ */
 .skill-tag {
-  border: 1px solid rgba(216,206,193,0.7);
-  padding: 2px 12px 2px 12px;
+  border: 1px solid rgba(216,206,193,0.5);
+  padding: 3px 12px;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 0.625rem;
   letter-spacing: 0.08em;
-  color: rgba(32,28,27,0.6);
+  /* Default (light sections): ink-colored text */
+  color: rgba(32,28,27,0.65);
   cursor: default;
   transition: border-color 0.2s, color 0.2s, background 0.2s;
   position: relative;
   overflow: hidden;
+  display: inline-block;
 }
 .skill-tag::before {
   content: '';
@@ -465,6 +467,16 @@ body {
 .skill-tag:hover { color: var(--color-paper); border-color: var(--color-oxblood); }
 .skill-tag:hover::before { transform: scaleX(1); }
 .skill-tag span { position: relative; z-index: 1; }
+
+/* On dark sections (.sec-dark), tags need light text to be visible */
+.sec-dark .skill-tag {
+  border-color: rgba(242,237,228,0.18);
+  color: rgba(242,237,228,0.6);
+}
+.sec-dark .skill-tag:hover {
+  color: var(--color-paper);
+  border-color: var(--color-oxblood);
+}
 
 /* ═══════════════════════════════════════════════════════════════
    CTA BUTTON HOVER

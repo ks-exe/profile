@@ -27,11 +27,18 @@ const videos: Video[] = [
     thumbnail: 'https://img.youtube.com/vi/LGUcXuvvigM/hqdefault.jpg',
   },
   {
-    title: 'Amazon Bedrock AgentCore — Demo',
-    description: 'Walkthrough of the customer support chatbot built on the Amazon Bedrock AgentCore managed harness pattern with prompt-routed Bedrock Flows.',
+    title: 'Data Quality Inspector — Demo',
+    description: 'Walkthrough of the AWS-powered data quality analysis application using Amazon Bedrock, API Gateway, and AWS Lambda.',
     url: 'https://youtu.be/zZUFQLpvs8A',
-    project: 'Amazon Bedrock AgentCore Harness',
+    project: 'Data Quality Inspector',
     thumbnail: 'https://img.youtube.com/vi/zZUFQLpvs8A/hqdefault.jpg',
+  },
+  {
+    title: 'EcoProof — Climate Data & Environmental Monitoring',
+    description: 'Demo of the environmental monitoring prototype processing real air-quality data with explainable quality checks and Ethereum audit proofs.',
+    url: 'https://youtu.be/mIxmj9SkpQ0',
+    project: 'EcoProof',
+    thumbnail: 'https://img.youtube.com/vi/mIxmj9SkpQ0/hqdefault.jpg',
   },
 ];
 
@@ -61,12 +68,14 @@ export function YouTube() {
         </div>
 
         {/* Video grid */}
-        <div className="grid gap-0 sm:grid-cols-3 border border-stone/40">
+        <div className="grid gap-0 sm:grid-cols-2 lg:grid-cols-4 border border-stone/40">
           {videos.map((v, idx) => (
             <a key={v.url} href={v.url} target="_blank" rel="noopener noreferrer"
               className={`reveal group flex flex-col transition-colors hover:bg-parchment/60
-                ${idx < 2 ? 'sm:border-r border-stone/40' : ''}
-                border-b sm:border-b-0 border-stone/40 last:border-b-0`}
+                ${idx % 2 === 0 ? 'sm:border-r border-stone/40' : ''}
+                ${idx < 2 ? 'border-b border-stone/40 sm:border-b border-stone/40 lg:border-b-0' : ''}
+                ${idx < videos.length - (videos.length % 2 === 0 ? 2 : 1) ? 'lg:border-r' : ''}
+                border-b border-stone/40 last:border-b-0`}
               style={{ animationDelay: `${idx * 80}ms` }}>
 
               {/* Thumbnail */}
