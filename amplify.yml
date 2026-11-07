@@ -1,0 +1,19 @@
+version: 1
+# AWS Amplify Hosting build specification
+# Build the Vite + React + TypeScript portfolio and serve the dist/ output
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    # The folder that contains the compiled assets to be deployed
+    baseDirectory: dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
