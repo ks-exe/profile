@@ -16,7 +16,9 @@ typed, single-source-of-truth data layer.
 
 **Live site: https://main.d1d0tpxe1gf39f.amplifyapp.com/**
 
-[Overview](#overview) · [Architecture](#architecture) · [Tech stack](#tech-stack) ·
+![Portfolio hero section](screenshots/hero.png)
+
+[Overview](#overview) · [Preview](#preview) · [Architecture](#architecture) · [Tech stack](#tech-stack) ·
 [Project structure](#project-structure) · [Quick start](#quick-start) ·
 [Deployment](#deployment-aws-amplify) · [Featured work](#featured-engineering-work) ·
 [Engineering notes](#engineering-notes) · [Contact](#contact)
@@ -40,6 +42,15 @@ metrics, screenshots, or credentials are faked.
 | Focus | AI Engineering, Data Engineering, AWS and Cloud |
 | Availability | Open to AI Engineering, Data Engineering, and Cloud opportunities |
 | Institution | COMSATS University Islamabad, Sahiwal Campus (final year, Computer Science) |
+
+## Preview
+
+A single scroll through the deployed site. Captured from the live AWS Amplify
+deployment at a 1440px desktop width.
+
+![Full portfolio page](screenshots/full-page.png)
+
+Screenshots are stored in [`screenshots/`](screenshots/).
 
 ## What it does
 
